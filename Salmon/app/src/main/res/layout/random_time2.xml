@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:text="What activity are you doing? Select the option(s) that best match your activity, or enter your answers in the space provided for optional input."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/negative"
+                android:id="@+id/textView_Q2" />
+            <Spinner
+                android:id="@+id/Q2_ActivitySpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView_Q2"
+                android:prompt="@string/Q2_ActivityPrompt" />
+            <TextView
+                android:text="If other, please specify the activity"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_ActivitySpinner"
+                android:id="@+id/Q2_activity" />
+            <EditText
+                android:inputType="textMultiLine"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_activity"
+                android:id="@+id/Q2_ActivityOther"
+                android:imeOptions="actionDone" />
+            <TextView
+                android:text="Please describe any companion for the activity."
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_ActivityOther"
+                android:id="@+id/Q2_CompanionQuestion" />
+            <Spinner
+                android:id="@+id/Q2_CompanionSpinner"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_CompanionQuestion"
+                android:prompt="@string/Q2_CompanionPrompt" />
+            <TextView
+                android:text="If other, please specify the companion"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_CompanionSpinner"
+                android:id="@+id/Q2_companion" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_companion"
+                android:id="@+id/Q2_CompanionOther"
+                android:imeOptions="actionDone" />
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_CompanionOther"
+                android:layout_alignParentRight="true"
+                android:id="@+id/next2r" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

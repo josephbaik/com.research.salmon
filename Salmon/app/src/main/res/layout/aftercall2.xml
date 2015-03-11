@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <ScrollView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_height="match_parent"
+            android:id="@+id/RelativeLayout">
+            <TextView
+                android:text="@string/question_2"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/answer_1"
+                android:id="@+id/question2" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/question2"
+                android:id="@+id/seekBar1_Q2" />
+            <TextView
+                android:text="neutral"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekBar1_Q2"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/Q2_neutral" />
+            <TextView
+                android:text="positive"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekBar1_Q2"
+                android:layout_alignParentRight="true"
+                android:id="@+id/Q2_positive" />
+            <SeekBar
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_positive"
+                android:id="@+id/seekBar2_Q2"
+                android:layout_toRightOf="@id/seekBar2_Q2" />
+            <TextView
+                android:text="neutral"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekBar2_Q2"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/Q2_neutral1" />
+            <TextView
+                android:text="negative"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekBar2_Q2"
+                android:layout_alignParentRight="true"
+                android:id="@+id/Q2_negative" />
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Q2_negative"
+                android:id="@+id/next2"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
