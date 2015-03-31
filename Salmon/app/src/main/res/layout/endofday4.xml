@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="25px"
+            android:minWidth="25px"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_D"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/q4"
+                android:layout_below="@id/q3_sb1l"/>
+
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_sb1"
+                android:layout_below="@id/q4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="I felt relaxed"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb1r"
+                android:layout_below="@id/q4_sb1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="anxious in unfamiliar situations"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb1l"
+                android:layout_below="@id/q4_sb1"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_sb2"
+                android:layout_below="@id/q4_sb1l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="Entered social situations"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb2r"
+                android:layout_below="@id/q4_sb2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Avoided social situations"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb2l"
+                android:layout_below="@id/q4_sb2"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_sb3"
+                android:layout_below="@id/q4_sb2l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="I felt at ease talkign to strangers"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb3r"
+                android:layout_below="@id/q4_sb3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Uncomfortable when talking to strangers"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb3l"
+                android:layout_below="@id/q4_sb3"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_sb4"
+                android:layout_below="@id/q4_sb3l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="Avoided new people"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb4r"
+                android:layout_below="@id/q4_sb4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Took chance to meet new people"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb4l"
+                android:layout_below="@id/q4_sb4"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_sb5"
+                android:layout_below="@id/q4_sb4l" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="Worried about peoples opinions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb5r"
+                android:layout_below="@id/q4_sb5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Comfortable with peoples opinions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb5l"
+                android:layout_below="@id/q4_sb5"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q4_sb6"
+                android:layout_below="@id/q4_sb5l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="Anxious about being foolish in front of people"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb6r"
+                android:layout_below="@id/q4_sb6"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Relaxed"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q4_sb6l"
+                android:layout_below="@id/q4_sb6"/>
+
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q4_sb6l"
+                android:id="@+id/next4"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="25px"
+            android:minWidth="25px"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_F"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/q5_sb4r"
+                android:id="@+id/q6"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Face to face interaction"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/q6"
+                android:id="@+id/q6_ff"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q6_ff"
+                android:id="@+id/q6_sb13"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="0 hours"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q6_sb13"
+                android:id="@+id/q6_sb13l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="2 hours"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q6_sb13"
+                android:id="@+id/q6_sb13r"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q6_sb13r"
+                android:id="@+id/q6_sb14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Not at all"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q6_sb14"
+                android:id="@+id/q6_sb14l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Very positive"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q6_sb14"
+                android:id="@+id/q6_sb14r"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q6_sb14r"
+                android:id="@+id/q6_sb15"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Not at all"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q6_sb15"
+                android:id="@+id/q6_sb15l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Very negative"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q6_sb15"
+                android:id="@+id/q6_sb15r"/>
+
+
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q6_sb15r"
+                android:id="@+id/next6e"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

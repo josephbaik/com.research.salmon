@@ -28,7 +28,7 @@ public class endOfDay extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.endofday);
+        setContentView(R.layout.endofday1);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
 
         SeekBar q1sb1 = (SeekBar) findViewById(R.id.q1_sb1);
@@ -70,7 +70,18 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next1);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday2);
+                setUpQ2();
+            }
+        });
+    }
 
+
+    public void setUpQ2() {
         SeekBar q2sb1 = (SeekBar) findViewById(R.id.q2_sb1);
         q2sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -90,7 +101,17 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next2);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday3);
+                setUpQ3();
+            }
+        });
+    }
 
+    public void setUpQ3() {
         SeekBar q3sb1 = (SeekBar) findViewById(R.id.q3_sb1);
         q3sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -111,6 +132,18 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next3);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday4);
+                setUpQ4();
+            }
+        });
+
+    }
+
+    public void setUpQ4() {
         SeekBar q4sb1 = (SeekBar) findViewById(R.id.q4_sb1);
         q4sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -232,7 +265,18 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next4);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday5);
+                setUpQ5();
+            }
+        });
 
+    }
+
+    public void setUpQ5() {
         SeekBar q5sb1 = (SeekBar) findViewById(R.id.q5_sb1);
         q5sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -314,7 +358,18 @@ public class endOfDay extends Activity {
             }
         });
 
-        SeekBar q6sb1 = (SeekBar) findViewById(R.id.q5_sb1);
+        final Button next1 = (Button) findViewById(R.id.next5);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday6);
+                setUpQ6();
+            }
+        });
+    }
+
+    public void setUpQ6() {
+        SeekBar q6sb1 = (SeekBar) findViewById(R.id.q6_sb1);
         q6sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
 
@@ -374,8 +429,19 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next6);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday6b);
+                setUpQ6B();
+            }
+        });
+    }
+
+    public void setUpQ6B() {
         SeekBar q6sb4 = (SeekBar) findViewById(R.id.q6_sb4);
-        q5sb4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        q6sb4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
 
             @Override
@@ -434,6 +500,17 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next6b);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday6c);
+                setUpQ6C();
+            }
+        });
+    }
+
+    public void setUpQ6C() {
         SeekBar q6sb7 = (SeekBar) findViewById(R.id.q6_sb7);
         q6sb7.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -494,6 +571,17 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next6c);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday6d);
+                setUpQ6D();
+            }
+        });
+    }
+
+    public void setUpQ6D() {
         SeekBar q6sb10 = (SeekBar) findViewById(R.id.q6_sb10);
         q6sb10.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -553,7 +641,17 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next6d);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday6e);
+                setUpQ6E();
+            }
+        });
+    }
 
+    public void setUpQ6E() {
         SeekBar q6sb13 = (SeekBar) findViewById(R.id.q6_sb13);
         q6sb13.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -613,7 +711,17 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next6e);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday6f);
+                setUpQ6F();
+            }
+        });
+    }
 
+    public void setUpQ6F() {
         SeekBar q6sb16 = (SeekBar) findViewById(R.id.q6_sb16);
         q6sb16.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -674,6 +782,18 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next6f);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday7);
+                setUpQ7();
+            }
+        });
+    }
+
+    public void setUpQ7() {
+
         SeekBar q7sb1 = (SeekBar) findViewById(R.id.q7_sb1);
         q7sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -694,6 +814,18 @@ public class endOfDay extends Activity {
             }
         });
 
+        final Button next1 = (Button) findViewById(R.id.next7);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday8);
+                setUpQ8();
+            }
+        });
+    }
+
+    public void setUpQ8() {
+
         SeekBar q8sb1 = (SeekBar) findViewById(R.id.q8_sb1);
         q8sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -713,7 +845,6 @@ public class endOfDay extends Activity {
 
             }
         });
-
 
         SeekBar q8sb2 = (SeekBar) findViewById(R.id.q8_sb2);
         q8sb2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
@@ -756,7 +887,7 @@ public class endOfDay extends Activity {
         });
 
         SeekBar q8sb4 = (SeekBar) findViewById(R.id.q8_sb4);
-        q5sb4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        q8sb4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
 
             @Override
@@ -894,7 +1025,17 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next8);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday9);
+                setUpQ9();
+            }
+        });
+    }
 
+    public void setUpQ9() {
         SeekBar q9sb1 = (SeekBar) findViewById(R.id.q9_sb1);
         q9sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -964,7 +1105,17 @@ public class endOfDay extends Activity {
                 return true;
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next9);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday10);
+                setUpQ10();
+            }
+        });
+    }
 
+    public void setUpQ10() {
         SeekBar q10sb1 = (SeekBar) findViewById(R.id.q10_sb1);
         q10sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -1027,7 +1178,7 @@ public class endOfDay extends Activity {
         });
 
         SeekBar q10sb4 = (SeekBar) findViewById(R.id.q10_sb4);
-        q5sb4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+        q10sb4.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
 
             @Override
@@ -1165,7 +1316,17 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next10);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday11);
+                setUpQ11();
+            }
+        });
+    }
 
+    public void setUpQ11() {
         SeekBar q11sb1 = (SeekBar) findViewById(R.id.q11_sb1);
         q11sb1.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             int progressChanged = 0;
@@ -1185,6 +1346,18 @@ public class endOfDay extends Activity {
 
             }
         });
+        final Button next1 = (Button) findViewById(R.id.next11);
+        next1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setContentView(R.layout.endofday12);
+                setUpQ12();
+            }
+        });
+
+    }
+
+    public void setUpQ12() {
         Spinner q12sp1 = (Spinner) findViewById(R.id.q12_s1);
         ArrayAdapter<CharSequence> q12sp1a = ArrayAdapter.createFromResource(this,
                 R.array.companion_options, android.R.layout.simple_spinner_item);
@@ -1247,7 +1420,7 @@ public class endOfDay extends Activity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String string = q1sb1r + "Positive" + "/n" + q1sb2r + "Negative" + "/n" + q2sb1r + "Not Effective" + "/n" + q3sb1r +  "Extremely Disliked" + "/n" + q4sb1r + "Felt Relaxed" + "/n" + q4sb2r + "Entered Social Situations" + "/n" + q4sb3r + "At ease talking to strangers" + "/n" + q4sb4r + "Avoided New People" + "/n" + q4sb5r + "Worried about peoples opinions" + "/n" + q4sb6r + "Anxious about being foolish in front of people" + "/n" + q5sb1r + "Was dwelling on mistakes I made in social interactions" + "/n" + q5sb2r + "Kept thinking about bad things that could happen during social interactions" + "/n" + q5sb3r + "Was worrying about how my social interactions would turn out" + "/n" + q5sb4r + "I kept thinking about bad things that could happen during social interactions" + "/n" + q6sb1r + ">2 hours" + "/n" + q6sb2r + "Very positive" + "/n" + q6sb3r + "Very negative" + "/n" + q6sb4r + ">2 hours" + "/n" + q6sb5r + "Very positive" + "/n" + q6sb6r  + "Very negative" +  "/n" + q6sb7r + ">2 hours" + "/n" + q6sb8r + "Very positive" + "/n" + q6sb9r + "Very negative" + "/n" + q6sb10r + ">2 hours" + "/n" + q6sb11r + "Very positive" + "/n" + q6sb12r  + "Very negative" + "/n" + q6sb13r + ">2 hours" + "/n" + q6sb14r + "Very positive" + "/n" + q6sb15r + "Very negative" + "/n" + q6sb16r + ">2 hours" + "/n" + q6sb17r + "Very positive" + "/n" + q6sb18r  + "Very negative" + "/n" + q7sb1r + "Very invaded" + "/n" + q8sb1r + "All the time" + "/n" + q8sb2r +"All the time" + "/n" + q8sb3r + "All the time" + "/n" + q8sb4r +"All the time" + "/n" + q8sb5r +"All the time" + "/n" + q8sb6r +"All the time" + "/n" + q8sb7r +"All the time" + "/n" + q8sb8r +"All the time" + "/n" + q8sb9r +"All the time" + "/n" + q8sb10r +"All the time" + "/n" + q9sp1r  + "All the time" + "/n" + q9sb2r + "All the time" + "/n" + q9sp1r + "/n" + q9etr + "/n" + q10sb1r +"A great deal"+ "/n" + q10sb2r+"A great deal"+ "/n" + q10sb3r+ "A great deal"+ "/n" + q10sb4r+"A great deal"+ "/n" + q10sb5r+"A great deal"+ "/n" + q10sb6r+"A great deal"+ "/n" + q10sb7r+"A great deal"+ "/n" + q10sb8r+"A great deal"+ "/n" + q10sb9r+"A great deal"+ "/n" + q10sb10r+"A great deal" + "/n" + q11sb1r+"75%" + "/n" + q12sb1r+"Very effectively" + "/n" + q12sb2r+"Extremely like them";
+                String string = q1sb1r + "Positive" + "/n" + q1sb2r + "Negative" + "/n" + q2sb1r + "Not Effective" + "/n" + q3sb1r + "Extremely Disliked" + "/n" + q4sb1r + "Felt Relaxed" + "/n" + q4sb2r + "Entered Social Situations" + "/n" + q4sb3r + "At ease talking to strangers" + "/n" + q4sb4r + "Avoided New People" + "/n" + q4sb5r + "Worried about peoples opinions" + "/n" + q4sb6r + "Anxious about being foolish in front of people" + "/n" + q5sb1r + "Was dwelling on mistakes I made in social interactions" + "/n" + q5sb2r + "Kept thinking about bad things that could happen during social interactions" + "/n" + q5sb3r + "Was worrying about how my social interactions would turn out" + "/n" + q5sb4r + "I kept thinking about bad things that could happen during social interactions" + "/n" + q6sb1r + ">2 hours" + "/n" + q6sb2r + "Very positive" + "/n" + q6sb3r + "Very negative" + "/n" + q6sb4r + ">2 hours" + "/n" + q6sb5r + "Very positive" + "/n" + q6sb6r + "Very negative" + "/n" + q6sb7r + ">2 hours" + "/n" + q6sb8r + "Very positive" + "/n" + q6sb9r + "Very negative" + "/n" + q6sb10r + ">2 hours" + "/n" + q6sb11r + "Very positive" + "/n" + q6sb12r + "Very negative" + "/n" + q6sb13r + ">2 hours" + "/n" + q6sb14r + "Very positive" + "/n" + q6sb15r + "Very negative" + "/n" + q6sb16r + ">2 hours" + "/n" + q6sb17r + "Very positive" + "/n" + q6sb18r + "Very negative" + "/n" + q7sb1r + "Very invaded" + "/n" + q8sb1r + "All the time" + "/n" + q8sb2r + "All the time" + "/n" + q8sb3r + "All the time" + "/n" + q8sb4r + "All the time" + "/n" + q8sb5r + "All the time" + "/n" + q8sb6r + "All the time" + "/n" + q8sb7r + "All the time" + "/n" + q8sb8r + "All the time" + "/n" + q8sb9r + "All the time" + "/n" + q8sb10r + "All the time" + "/n" + q9sp1r + "All the time" + "/n" + q9sb2r + "All the time" + "/n" + q9sp1r + "/n" + q9etr + "/n" + q10sb1r + "A great deal" + "/n" + q10sb2r + "A great deal" + "/n" + q10sb3r + "A great deal" + "/n" + q10sb4r + "A great deal" + "/n" + q10sb5r + "A great deal" + "/n" + q10sb6r + "A great deal" + "/n" + q10sb7r + "A great deal" + "/n" + q10sb8r + "A great deal" + "/n" + q10sb9r + "A great deal" + "/n" + q10sb10r + "A great deal" + "/n" + q11sb1r + "75%" + "/n" + q12sb1r + "Very effectively" + "/n" + q12sb2r + "Extremely like them";
                 String root = Environment.getExternalStorageDirectory().toString();
                 File myDir = new File(root + "/Salmon");
                 myDir.mkdirs();
@@ -1269,5 +1442,6 @@ public class endOfDay extends Activity {
                 endOfDay.this.startActivity(i);
             }
         });
+
     }
 }

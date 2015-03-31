@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="25px"
+            android:minWidth="25px"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_I"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/q8_sb10r"
+                android:id="@+id/q9"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Positive Feelings"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/q9"
+                android:id="@+id/q9_p1"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q9_p1"
+                android:id="@+id/q9_sb1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Never"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q9_sb1"
+                android:id="@+id/q9_sb1l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="All the time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q9_sb1"
+                android:id="@+id/q9_sb1r"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Negative Feelings"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/q9_sb1r"
+                android:id="@+id/q9_p2"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q9_p2"
+                android:id="@+id/q9_sb2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Never"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q9_sb2"
+                android:id="@+id/q9_sb2l"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="All the time"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q9_sb2"
+                android:id="@+id/q9_sb2r"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If never, to whom did you express these feelings?"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/q9_sb2r"
+                android:id="@+id/q9_p3"/>
+
+            <Spinner
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q9_p3"
+                android:id="@+id/q9_s1" />
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="If Other"
+                android:layout_below="@id/q9_s1"
+                android:id="@+id/q9_e1"/>
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q9_e1"
+                android:id="@+id/next9"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

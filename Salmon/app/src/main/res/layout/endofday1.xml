@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="25px"
+            android:minWidth="25px"
+            android:orientation="vertical">
+            <TextView
+                android:text="Survey 1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_A"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_below="@id/title"
+                android:id="@+id/q1"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q1_sb1"
+                android:layout_below="@id/q1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="neutral"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q1_sbr"
+                android:layout_below="@id/q1_sb1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="positive"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q1_sbl"
+                android:layout_below="@id/q1_sb1"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q1_sb2"
+                android:layout_below="@id/q1_sbl"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="negative"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q1_sb2r"
+                android:layout_below="@id/q1_sb2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="neutral"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/q1_sb2l"
+                android:layout_below="@id/q1_sb2"/>
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q1_sb2l"
+                android:id="@+id/next1"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

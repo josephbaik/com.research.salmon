@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="25px"
+        android:minWidth="25px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="25px"
+            android:minWidth="25px"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/question_E"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/q5"
+                android:layout_below="@id/q4_sb6l"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/q5_sb1"
+                android:layout_below="@id/q5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="0.0dp"
+                android:text="I was dwelling on mistakes I made in my social interactions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q5_sb1"
+                android:id="@+id/q5_sb1r" />
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q5_sb1r"
+                android:id="@+id/q5_sb2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="I kept thinking about negative social interactions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q5_sb2"
+                android:id="@+id/q5_sb2r"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q5_sb2r"
+                android:id="@+id/q5_sb3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="I was worrying about how my social interactions would turn out"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q5_sb3"
+                android:id="@+id/q5_sb3r"/>
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q5_sb3r"
+                android:id="@+id/q5_sb4"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="I kept thinking about bad things that could happen during social interactions"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@id/q5_sb4"
+                android:id="@+id/q5_sb4r"/>
+            <Button
+                android:text="Next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/q5_sb4r"
+                android:id="@+id/next5"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
