@@ -5,6 +5,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -13,6 +14,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.Toast;
+import android.content.Context;
 
 import java.security.Policy;
 import java.util.Calendar;
@@ -52,14 +54,19 @@ public class MainActivity extends ActionBarActivity {
             }
         });
 
-        Button start = (Button) findViewById(R.id.startService);
-        start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setUpNotif();
-                Toast.makeText(getApplicationContext(), "Notification Service Started", Toast.LENGTH_LONG).show();
-            }
-        });
+//        Button start = (Button) findViewById(R.id.startService);
+//        start.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                setUpNotif();
+//                Toast.makeText(getApplicationContext(), "Notification Service Started", Toast.LENGTH_LONG).show();
+//            }
+//        });
+
+//        setUpNotif();
+        ANRHandle anrhandler = new ANRHandle();
+        anrhandler.execute();
+//        anrhandler.doInBackground();
     }
 
 //    @Override
@@ -73,6 +80,33 @@ public class MainActivity extends ActionBarActivity {
 //        }
 //        return super.onOptionsItemSelected(item);
 //    }
+
+    private class ANRHandle extends AsyncTask<String, Integer, Integer> {
+        @Override
+        protected Integer doInBackground(String... params) {
+            int i = 0;
+            while (true) {
+                try {
+                    Thread.sleep(1000);
+                    i++;
+                    publishProgress(i);
+                    Context c = getApplicationContext();
+                    System.out.println("bruh");
+                } catch (InterruptedException e) {
+                    Thread.interrupted();
+                    Context c = getApplicationContext();
+                    Toast.makeText(c, "ANR may happen!", Toast.LENGTH_SHORT).show();
+                    break;
+                }
+            }
+
+            Context c = getApplicationContext();
+            Toast.makeText(c, "ANR may happen!", Toast.LENGTH_SHORT).show();
+            return 1;
+        }
+
+
+    }
 
     public void setUpNotif(){
         Random rand = new Random();
@@ -95,5 +129,7 @@ public class MainActivity extends ActionBarActivity {
         PendingIntent pendingIntent2 = PendingIntent.getBroadcast(MainActivity.this, 1, intent2, PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager afternoon = (AlarmManager) MainActivity.this.getSystemService(MainActivity.this.ALARM_SERVICE);
         afternoon.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar2.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent2);
+
+
     }
 }
